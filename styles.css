@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(
+    to right, rgb(255, 0, 128) 0%, rgb(255, 0, 128) 25%, 
+    rgb(163, 73, 164) 50%, rgb(0, 0, 255) 75%, rgb(0, 0, 255) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.20);
+    border-radius: 2em;
+    padding: 4em 3em;
+}
+
+.top-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+}
+#pomodoro-session {
+    background-color: rgb(51, 5, 94);
+}
+
+#short-break {
+    background-color: rgb(167, 17, 142);
+}
+
+#long-break {
+    background-color: rgb(28, 19, 160);
+}
+
+.title {
+    font-size: 2em;
+    margin: 20px auto;
+}
+
+
+.timer-display {
+    font-size: 4em;
+    display: flex;
+    justify-content: center;
+}
+
+.button-wrapper {
+    display: flex;
+    gap: 1em;
+}
+
+button {
+    font-size: 2em;
+    font-weight: 800;
+    letter-spacing: 1px;
+    padding: 0.5em 1.5em;
+    border-radius: 0.5em;
+    border: none;
+    color: white;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+button:hover {
+    transform: translateY(-10px);
+}
+
+#start {
+    background-color: rgb(7, 180, 51);
+}
+
+#reset {
+    background-color: rgb(12, 12, 218);
+}
+
+#stop {
+    background-color: rgb(221, 22, 22);
+}
+
+@media screen and (min-width: 320px) and (max-width: 600px) {
+    .container {
+        transform: scale(0.9);
+    }
+
+    .timer-display {
+        width: 500px;
+    }
+}
